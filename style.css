@@ -1,0 +1,19 @@
+.principal{
+    height: 500px;
+    width: 400px;
+    background-color:  #038c4c;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.cabecario{
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
