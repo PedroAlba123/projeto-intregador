@@ -1,10 +1,10 @@
 .principal{
-    height: 500px;
-    width: 400px;
+    height: 800px;
+    width: 600px;
     background-color:  #038c4c;
 
     display: flex;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
     margin: auto;
     flex-wrap: wrap;
@@ -16,4 +16,9 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    margin-top: -80px;
+}
+img{
+    height: 20%;  
+    margin-top: -20px;  
 }
