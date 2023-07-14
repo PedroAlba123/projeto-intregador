@@ -1,7 +1,7 @@
 .principal{
     height: 800px;
     width: 600px;
-    background-color:  #038c4c;
+    background-color:  #00995d;
 
     display: flex;
     justify-content:center;
@@ -37,4 +37,6 @@ fieldset {
   .Formulario{
     border: 1px solid black;
   }
-  
+  ::backdrop{
+    background-color: #ece3d9;
+  }

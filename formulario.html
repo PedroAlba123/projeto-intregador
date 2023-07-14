@@ -20,31 +20,63 @@
         <div class="Formulario">
             <form action="formulario.html">                
                 <div class="Nome">
-                        <label>Nome</label>
+                        <label for="Nome">Nome</label>
                         <input type="text" name="Nome" id="Nome">
                 </div>                                       
                 <div class="Nacimento">
-                        <label>Data de Nascimento</label>
+                        <label for="Data de Nacimento">Data de Nascimento</label>
                         <input type="text" name="Nacimento" id="Nacimento">
                 </div>                                
                 <div class="CPF">
-                        <label>CPF</label>
+                        <label for="CPF">CPF</label>
                         <input type="text" name="CPF" id="CPF">
                 </div>                               
-                <div class="Email">
-                        <label>Email</label>
-                        <input type="email" name="email" id="email">
-                </div>                           
+                <div class="Endereco">
+                        <label for="Endereco">Endereço</label>
+                        <input type="text" name="Endereco" id="Endereco">
+                </div>    
+                <div class="Estadocivil">
+                        <label for="Estadocivil">Estado Civil</label>
+                        <select name="Estadocivil" id=""Estadocivil>
+                                <option selected disabled value=""></option>
+                                <option>Solteiro</option>
+                                <option>Casado</option>
+                                <option>Separado</option>
+                                <option>Divorciado</option>
+                                <option>Viúvo</option>
+                        </select>
+                </div>                        
                 <div class=" Telefone">
-                        <label>Telefone</label>
+                        <label for="Telefone">Telefone</label>
                         <input type="tel" name="Telefone" id="Telefone">
                 </div>            
                 <div class="Sexo">
-                        <label>Sexo</label>  
+                        <label for="Sexo">Sexo</label>  
                         <label><input type="radio" name="Sexo" value="Masculino">Masculino</label>
                         <label><input type="radio" name="Sexo" value="Feminino">Feminino</label>
                 </div>
-                
+                <div class="Telefone">
+                        <label for="Telefone">Telefone</label>
+                        <input type="tel" name="Telefone" id="Telefone">
+                </div>   
+                <label for="possuiAlergia">Você possui alguma alergia?</label>
+                <input type="radio" name="possuiAlergia" value="sim" onclick="exibirCampoAlergia()">Sim
+                <input type="radio" name="possuiAlergia" value="nao" onclick="esconderCampoAlergia()">Não
+
+                <div id="Alergia" style="display: none;">
+                         <label for="tipoAlergia">Qual</label>
+                        <input type="text" id="tipoAlergia">
+                </div>
+
+                <script>
+                        function exibirCampoAlergia() {
+                           document.getElementById("Alergia").style.display = "block";
+                        }
+
+                        function esconderCampoAlergia() {
+                           document.getElementById("Alergia").style.display = "none";
+                        }
+                </script>  
            </form>
         </div>
    </div>
