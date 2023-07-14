@@ -17,24 +17,30 @@
              Complete com Suas informações
              </p>
         </header>
+        <br>
+        <br>
         <div class="Formulario">
             <form action="formulario.html">                
                 <div class="Nome">
                         <label for="Nome">Nome</label>
                         <input type="text" name="Nome" id="Nome">
-                </div>                                       
+                </div>  
+                                           
                 <div class="Nacimento">
                         <label for="Data de Nacimento">Data de Nascimento</label>
                         <input type="text" name="Nacimento" id="Nacimento">
-                </div>                                
+                </div> 
+                                     
                 <div class="CPF">
                         <label for="CPF">CPF</label>
                         <input type="text" name="CPF" id="CPF">
-                </div>                               
+                </div>  
+                                          
                 <div class="Endereco">
                         <label for="Endereco">Endereço</label>
                         <input type="text" name="Endereco" id="Endereco">
                 </div>    
+               
                 <div class="Estadocivil">
                         <label for="Estadocivil">Estado Civil</label>
                         <select name="Estadocivil" id=""Estadocivil>
@@ -45,38 +51,55 @@
                                 <option>Divorciado</option>
                                 <option>Viúvo</option>
                         </select>
-                </div>                        
+                </div>   
+                                   
                 <div class=" Telefone">
                         <label for="Telefone">Telefone</label>
                         <input type="tel" name="Telefone" id="Telefone">
-                </div>            
+                </div>   
+                      
                 <div class="Sexo">
                         <label for="Sexo">Sexo</label>  
                         <label><input type="radio" name="Sexo" value="Masculino">Masculino</label>
                         <label><input type="radio" name="Sexo" value="Feminino">Feminino</label>
                 </div>
+               
                 <div class="Telefone">
                         <label for="Telefone">Telefone</label>
                         <input type="tel" name="Telefone" id="Telefone">
-                </div>   
-                <label for="possuiAlergia">Você possui alguma alergia?</label>
-                <input type="radio" name="possuiAlergia" value="sim" onclick="exibirCampoAlergia()">Sim
-                <input type="radio" name="possuiAlergia" value="nao" onclick="esconderCampoAlergia()">Não
-
-                <div id="Alergia" style="display: none;">
-                         <label for="tipoAlergia">Qual</label>
-                        <input type="text" id="tipoAlergia">
+                </div> 
+              
+                <div class="alergia"> 
+                        <label for="Alergia">Você possui alguma alergia</label>
+                        <input type="radio" name="Alergia" value="sim" onclick="habilitarCampoAlergia()">Sim
+                        <input type="radio" name="Alergia" value="nao" onclick="desabilitarCampoAlergia()">Não
+                </div> 
+                <div class="qualalergia">
+                  <label for="qualAlergia">Qual alergia</label>
+                  <input type="text" id="qualalergia" disabled>
                 </div>
-
                 <script>
-                        function exibirCampoAlergia() {
-                           document.getElementById("Alergia").style.display = "block";
-                        }
-
-                        function esconderCampoAlergia() {
-                           document.getElementById("Alergia").style.display = "none";
-                        }
-                </script>  
+                  function habilitarCampoAlergia() {
+                    document.getElementById("qualalergia").disabled = false;
+                  }
+                
+                  function desabilitarCampoAlergia() {
+                    document.getElementById("qualalergia").disabled = true;
+                    document.getElementById("qualalergia").value = ""; 
+                  }
+                </script>
+              
+                <div class="internado">
+                        <label for="internado">Esteve internado nos últimos 30 dias</label>  
+                        <label><input type="radio" name="internado" value="Sim">Sim</label>
+                        <label><input type="radio" name="internado" value="Não">Não</label>
+                </div>    
+               
+                <div class=contato">
+                        <label for="contato">Nome e Telefone de Pessoa para contato</label>
+                        <input type="text" name="nomecontato" id="nomecontato">
+                        <input type="tel" name="telefonecontato" id="telefonecontato">
+                </div>                            
            </form>
         </div>
    </div>

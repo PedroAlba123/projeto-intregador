@@ -1,6 +1,11 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 .principal{
-    height: 800px;
-    width: 600px;
+    height:  1600px;
+    width: 500px;
     background-color:  #00995d;
 
     display: flex;
@@ -18,9 +23,10 @@
     flex-wrap: wrap;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
 }
+
 img{
-    height: 20%;  
-    margin-top: -20px;  
+    height: 10%;  
+    margin-top: 10px;  
 }
 fieldset {
    
@@ -34,9 +40,30 @@ fieldset {
   }
 
 
+
   .Formulario{
     border: 1px solid black;
+    width: 80%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    list-style: none;
   }
   ::backdrop{
     background-color: #ece3d9;
   }
+  label {
+    display: block; 
+    margin-bottom: 10px; 
+  }
+  
+  input,textarea {
+
+    margin-bottom: 20px;
+  }
+  div {
+    margin-bottom: 20px; 
+  }
+  
