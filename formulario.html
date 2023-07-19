@@ -7,7 +7,8 @@
     <title>Formulario</title>
 </head>
 <body>
-   <div class="principal">
+        <div class="header">
+
         <img src="img/logo.png" alt="">
         <header class="cabecario">
             <h1>
@@ -17,67 +18,68 @@
              Complete com Suas informações
              </p>
         </header>
-        <br>
-        <br>
-        <div class="Formulario">
+
+        </div>
+
+
+        <div class="formulario">
             <form action="formulario.html">                
-                <div class="Nome">
-                        <label for="Nome">Nome</label>
-                        <input type="text" name="Nome" id="Nome">
-                </div>  
-                                           
-                <div class="Nacimento">
-                        <label for="Data de Nacimento">Data de Nascimento</label>
-                        <input type="text" name="Nacimento" id="Nacimento">
-                </div> 
-                                     
-                <div class="CPF">
-                        <label for="CPF">CPF</label>
-                        <input type="text" name="CPF" id="CPF">
-                </div>  
+                <div class="col1">
+                        <div class="Nome">
+                                <label for="Nome">Nome</label>
+                                <input type="text" name="Nome" id="Nome">
+                        </div>
+                        
+                        <div class="ascimento">
+                                <label for="Data de Nascimento">Data de Nascimento</label>
+                                <input type="text" name="Nascimento" id="Nascimento">
+                        </div>
+                        
+                        <div class="CPF">
+                                <label for="CPF">CPF</label>
+                                <input type="text" name="CPF" id="CPF">
+                        </div>
+                </div>
                                           
-                <div class="Endereco">
-                        <label for="Endereco">Endereço</label>
-                        <input type="text" name="Endereco" id="Endereco">
-                </div>    
-               
-                <div class="Estadocivil">
-                        <label for="Estadocivil">Estado Civil</label>
-                        <select name="Estadocivil" id=""Estadocivil>
-                                <option selected disabled value=""></option>
-                                <option>Solteiro</option>
-                                <option>Casado</option>
-                                <option>Separado</option>
-                                <option>Divorciado</option>
-                                <option>Viúvo</option>
-                        </select>
-                </div>   
-                                   
-                <div class=" Telefone">
-                        <label for="Telefone">Telefone</label>
-                        <input type="tel" name="Telefone" id="Telefone">
-                </div>   
+                <div class="col2">
+                        <div class="Endereco">
+                                <label for="Endereco">Endereço</label>
+                                <input type="text" name="Endereco" id="Endereco">
+                        </div>
+                        <div class="Estadocivil">
+                                <label for="Estadocivil">Estado Civil</label>
+                                <select name="Estadocivil" id=""Estadocivil>
+                                        <option selected disabled value=""></option>
+                                        <option>Solteiro</option>
+                                        <option>Casado</option>
+                                        <option>Separado</option>
+                                        <option>Divorciado</option>
+                                        <option>Viúvo</option>
+                                </select>
+                        </div>
+                        <br>
+                        <div class="Sexo">
+                                <label for="Sexo">Sexo</label>
+                                <label><input type="radio" name="Sexo" value="Masculino">Masculino</label>
+                                <label><input type="radio" name="Sexo" value="Feminino">Feminino</label>
+                        </div>
+                </div>
+              <div class="col3">
                       
-                <div class="Sexo">
-                        <label for="Sexo">Sexo</label>  
-                        <label><input type="radio" name="Sexo" value="Masculino">Masculino</label>
-                        <label><input type="radio" name="Sexo" value="Feminino">Feminino</label>
-                </div>
-               
-                <div class="Telefone">
-                        <label for="Telefone">Telefone</label>
-                        <input type="tel" name="Telefone" id="Telefone">
-                </div> 
-              
-                <div class="alergia"> 
-                        <label for="Alergia">Você possui alguma alergia</label>
-                        <input type="radio" name="Alergia" value="sim" onclick="habilitarCampoAlergia()">Sim
-                        <input type="radio" name="Alergia" value="nao" onclick="desabilitarCampoAlergia()">Não
-                </div> 
-                <div class="qualalergia">
-                  <label for="qualAlergia">Qual alergia</label>
-                  <input type="text" id="qualalergia" disabled>
-                </div>
+                       <div class="Telefone">
+                               <label for="telefone">Telefone</label>
+                               <input type="text" placeholder="(99) 9999-9999" name="telefone" id="telefone" maxlength="15">
+                       </div>
+                       <div class="alergia">
+                               <label for="Alergia">Você possui alguma alergia</label>
+                               <input type="radio" name="Alergia" value="sim" onclick="habilitarCampoAlergia()">Sim
+                               <input type="radio" name="Alergia" value="nao" onclick="desabilitarCampoAlergia()">Não
+                       </div>
+                       <div class="qualalergia">
+                         <label for="qualAlergia">Qual alergia</label>
+                         <input type="text" id="qualalergia" disabled>
+                       </div>
+              </div>
                 <script>
                   function habilitarCampoAlergia() {
                     document.getElementById("qualalergia").disabled = false;
@@ -89,19 +91,35 @@
                   }
                 </script>
               
-                <div class="internado">
-                        <label for="internado">Esteve internado nos últimos 30 dias</label>  
-                        <label><input type="radio" name="internado" value="Sim">Sim</label>
-                        <label><input type="radio" name="internado" value="Não">Não</label>
-                </div>    
-               
-                <div class=contato">
-                        <label for="contato">Nome e Telefone de Pessoa para contato</label>
-                        <input type="text" name="nomecontato" id="nomecontato">
-                        <input type="tel" name="telefonecontato" id="telefonecontato">
-                </div>                            
-           </form>
+                <div class="col4">
+                        <div class="internado">
+                                <label for="internado">Esteve internado nos últimos 30 dias</label>
+                                <label><input type="radio" name="internado" value="Sim">Sim</label>
+                                <label><input type="radio" name="internado" value="Não">Não</label>
+                        </div>
+                        <div class=contato">
+                                <label for="contato">Nome e Telefone de Pessoa para contato</label>
+                                <input type="text" name="nomecontato" id="nomecontato"><br>
+                                <br> <input type="tel" name="telefonecontato" id="telefonecontato" placeholder="(99) 9999-9999"  maxlength="15">
+                        </div>
+                        <div>
+                              <input type="submit" class="botao_formulario" value="Processar QR Code" >
+                        </div>
+                </div>
+                <script>
+                        function validarTelefone() {
+                          var telefone = document.getElementById("telefone").value;
+                          var regex = /^\(\d{2}\) \d{4}-\d{4}$/;
+                          
+                          if (regex.test(telefone)) {
+                            alert("Telefone válido!");
+                          } else {
+                            alert("Telefone inválido! Insira o telefone no formato (99) 9999-9999.");
+                          }
+                        }
+                </script>
+                </form>   
         </div>
-   </div>
+
 </body>
 </html>

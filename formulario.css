@@ -4,8 +4,8 @@
 }
 
 .principal{
-    height:  1600px;
-    width: 500px;
+    height: 100%;
+    width: 100%;
     background-color:  #00995d;
 
     display: flex;
@@ -25,8 +25,8 @@
 }
 
 img{
-    height: 10%;  
-    margin-top: 10px;  
+    height: 120px;  
+    margin-top: 10px;
 }
 fieldset {
    
@@ -39,17 +39,28 @@ fieldset {
     margin-bottom: 10px; 
   }
 
-
-
-  .Formulario{
-    border: 1px solid black;
-    width: 80%;
-    padding: 20px;
+  .teste{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    flex-wrap: wrap;
+  }
+
+  form{
+    display: flex;
+    flex-wrap: wrap;
+    width: 99%;
+    gap: 20px;
+    height: 70%;
+  }
+
+  .formulario{
+    border: 1px solid black;
+    width: 70%;
+    background-color: #00995d;
+    flex-wrap: wrap;
+    padding: 20px;
+    display: flex;   
     list-style: none;
+    flex-direction: row;
   }
   ::backdrop{
     background-color: #ece3d9;
@@ -66,4 +77,33 @@ fieldset {
   div {
     margin-bottom: 20px; 
   }
-  
+  .botao_formulario{
+    width: 100%;
+    display: block;
+    float: left;
+    background-color: #b1d34b;
+    border: black;
+    color: #ece3d9;
+    cursor: pointer;
+    padding: 1em 80px;
+    text-align: center;
+    font-size: 1em;
+    -webkit-border-radius: 4px ;
+    border-radius: 4px;
+    transition: 0,3s;
+  }
+
+  .header{
+    margin: auto;
+   
+    width: 30%;
+  }
+
+  /*colunas*/
+
+
+  #telefone{
+    border-radius: 20px;
+    height: 40px;
+    text-align: center;
+  }
