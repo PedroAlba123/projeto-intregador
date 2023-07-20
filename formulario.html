@@ -8,21 +8,20 @@
 </head>
 <body>
         <div class="header">
-
-        <img src="img/logo.png" alt="">
-        <header class="cabecario">
-            <h1>
-             Pré Cadastro
-            </h1>
-             <p>
-             Complete com Suas informações
-             </p>
-        </header>
-
+        
         </div>
-
-
         <div class="formulario">
+                <header class="cabecario">
+                        <img src="img/logo.png" alt="" class="img">
+                        <h1 class="titulo">
+                         Pré Cadastro
+                        </h1>
+                </header>
+
+                <div class="info">
+                        <p>Complete com Suas informações</p>
+                </div>
+
             <form action="formulario.html">                
                 <div class="col1">
                         <div class="Nome">
@@ -30,9 +29,9 @@
                                 <input type="text" name="Nome" id="Nome">
                         </div>
                         
-                        <div class="ascimento">
+                        <div class="nascimento">
                                 <label for="Data de Nascimento">Data de Nascimento</label>
-                                <input type="text" name="Nascimento" id="Nascimento">
+                                <input type="date" name="Nascimento" id="Nascimento" placeholder="Nascimento" required>
                         </div>
                         
                         <div class="CPF">
@@ -46,9 +45,9 @@
                                 <label for="Endereco">Endereço</label>
                                 <input type="text" name="Endereco" id="Endereco">
                         </div>
-                        <div class="Estadocivil">
+                        <div id="Estadocivil">
                                 <label for="Estadocivil">Estado Civil</label>
-                                <select name="Estadocivil" id=""Estadocivil>
+                                <select name="Estadocivil" id="Estadocivil">
                                         <option selected disabled value=""></option>
                                         <option>Solteiro</option>
                                         <option>Casado</option>
@@ -102,23 +101,11 @@
                                 <input type="text" name="nomecontato" id="nomecontato"><br>
                                 <br> <input type="tel" name="telefonecontato" id="telefonecontato" placeholder="(99) 9999-9999"  maxlength="15">
                         </div>
-                        <div>
+                </div>
+                <div class="button">
                               <input type="submit" class="botao_formulario" value="Processar QR Code" >
                         </div>
-                </div>
-                <script>
-                        function validarTelefone() {
-                          var telefone = document.getElementById("telefone").value;
-                          var regex = /^\(\d{2}\) \d{4}-\d{4}$/;
-                          
-                          if (regex.test(telefone)) {
-                            alert("Telefone válido!");
-                          } else {
-                            alert("Telefone inválido! Insira o telefone no formato (99) 9999-9999.");
-                          }
-                        }
-                </script>
-                </form>   
+                </form>
         </div>
 
 </body>

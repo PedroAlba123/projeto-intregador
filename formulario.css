@@ -2,34 +2,39 @@
   margin: 0;
   padding: 0;
 }
-
 .principal{
-    height: 100%;
-    width: 100%;
-    background-color:  #00995d;
-
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    margin: auto;
-    flex-wrap: wrap;
+  width: 100%;
+  background-color:  #A4E796;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  margin: auto;
+  flex-wrap: wrap;
+  
 }
 
 .cabecario{
-    width: 300px;
+    width: 100%;
+    height: 100px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+    }
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 40px;
+  border: 1px solid black;
 }
 
 img{
-    height: 120px;  
+    height: 80px;  
     margin-top: 10px;
 }
 fieldset {
-   
     padding: 20px; 
     margin-bottom: 20px;
   }
@@ -50,17 +55,21 @@ fieldset {
     width: 99%;
     gap: 20px;
     height: 70%;
+    margin-top: 20px;
   }
 
   .formulario{
     border: 1px solid black;
     width: 70%;
-    background-color: #00995d;
-    flex-wrap: wrap;
+
+    background-color: #A4E796;
     padding: 20px;
     display: flex;   
     list-style: none;
-    flex-direction: row;
+    flex-direction: column;
+    margin: auto;
+
+
   }
   ::backdrop{
     background-color: #ece3d9;
@@ -71,15 +80,12 @@ fieldset {
   }
   
   input,textarea {
-
     margin-bottom: 20px;
   }
-  div {
-    margin-bottom: 20px; 
-  }
+
   .botao_formulario{
-    width: 100%;
-    display: block;
+    
+    display: flex;
     float: left;
     background-color: #b1d34b;
     border: black;
@@ -91,19 +97,120 @@ fieldset {
     -webkit-border-radius: 4px ;
     border-radius: 4px;
     transition: 0,3s;
+
   }
 
-  .header{
-    margin: auto;
-   
-    width: 30%;
+  .button{
+    width: 100%;
+    margin-top: 10px;
+    height: 100px;
+    display: flex;
+    align-items:center ;
+    justify-content: center;
   }
 
-  /*colunas*/
 
-
+  
   #telefone{
     border-radius: 20px;
-    height: 40px;
+    height: 30px;
     text-align: center;
+  }
+
+  #Nome{
+    border-radius: 20px;
+    height: 30px;
+    text-align: center;
+  }
+  #Endereco{
+    border-radius: 20px;
+    height: 30px;
+    text-align: center;
+  }
+  #Nascimento{
+    border-radius: 20px;
+    height: 30px;
+    text-align: center;
+  }
+  #Estadocivil{
+    border-radius: 20px;
+    height: 30px;
+  }
+  #CPF{
+    border-radius: 20px;
+    height: 30px;
+    text-align: center;
+  }
+  #qualalergia{
+    border-radius: 20px;
+    height: 30px;
+    text-align: center;
+  }
+  #nomecontato{
+    border-radius: 20px;
+    height: 30px;
+    text-align: center;
+  }
+  #telefonecontato{
+    border-radius: 20px;
+    height: 30px;
+    text-align: center;
+    
+  }
+
+  .info{
+   height: 20px;
+   width: 99%;
+   text-align: center;
+   margin-top: 10px;
+   border: 1px solid black;
+  }
+
+  .titulo{
+    height: 30px;
+  }
+
+
+  .col1{
+    height: 350px;
+    width: 23%;
+    
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .col2{
+    height: 350px;
+    width: 23%;
+
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .col3{
+    height: 350px;
+    width: 23%;
+
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .col4{
+    width: 23%;
+    height: 350px;
+
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
   }
