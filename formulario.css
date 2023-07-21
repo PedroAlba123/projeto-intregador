@@ -2,9 +2,10 @@
   margin: 0;
   padding: 0;
 }
-body{
-  background-image: url(img/hospital.jpeg);
-  background-size: cover;
+/* background-image: url(img/hospital.jpeg);
+  background-size: cover; */
+  body{
+    background-color: #00995d;
 }
 .principal{
   width: 100%;
@@ -31,12 +32,14 @@ header{
   align-items: center;
   justify-content: space-evenly;
   gap: 40px;
-  border: 1px solid black;
+  font-weight: bold;
+  border: solid 1PX black;
+  border-radius: 15px;
 }
 
 img{
     height: 80px;  
-    margin-top: 10px;
+    margin-top: px;
 }
 fieldset {
     padding: 20px; 
@@ -65,14 +68,17 @@ fieldset {
   .formulario{
     border: 1px solid black;
     width: 60%;
-    height: 500px;
-    background-color: #00995d;
+    height: 600px;
+    background-color: #cde3bb;
     padding: 20px;
     display: flex;   
     list-style: none;
     flex-direction: column;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 30px;
+    transform: translateY(-700px);
+    transition: opacity 1s, transform 1s;
+    border-radius: 15px;
   }
   ::backdrop{
     background-color: #ece3d9;
@@ -90,7 +96,7 @@ fieldset {
     
     display: flex;
     float: left;
-    background-color: #b1d34b;
+    background-color: #00995d;
     border: black;
     color: #ece3d9;
     cursor: pointer;
@@ -100,6 +106,7 @@ fieldset {
     -webkit-border-radius: 4px ;
     border-radius: 4px;
     transition: 0,3s;
+    margin-top: -15px;
 
   }
 
@@ -115,47 +122,51 @@ fieldset {
 
   
   #telefone{
-    border-radius: 20px;
+    border-radius: 15px;
     height: 30px;
     text-align: center;
   }
 
   #Nome{
-    border-radius: 20px;
+    border-radius: 15px;
     height: 30px;
     text-align: center;
   }
   #Endereco{
-    border-radius: 20px;
+    border-radius: 15px;
     height: 30px;
     text-align: center;
   }
   #Nascimento{
-    border-radius: 20px;
+    border-radius: 15px;
     height: 30px;
     text-align: center;
   }
   #Estadocivil{
-    border-radius: 20px;
+    border-radius: 15px;
     height: 30px;
+    width: 200px;
+  }
+  .Estadocivil{
+    margin-top: 22px;
   }
   #CPF{
-    border-radius: 20px;
+    border-radius: 15px;
     height: 30px;
     text-align: center;
   }
   #qualalergia{
-    border-radius: 20px;
+    border-radius: 15px;
     height: 30px;
     text-align: center;
   }
   #nomecontato{
-    border-radius: 20px;
+    border-radius: 15px;
     height: 30px;
     text-align: center;
   }
   #telefonecontato{
-    border-radius: 20px;
+    border-radius: 15px;
     height: 30px;
     text-align: center;
     
@@ -166,7 +177,6 @@ fieldset {
    width: 99%;
    text-align: center;
    margin-top: 10px;
-   border: 1px solid black;
   }
 
   .titulo{

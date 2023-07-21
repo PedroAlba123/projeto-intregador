@@ -44,7 +44,7 @@
                                 <input type="text" name="Endereco" id="Endereco" required>
                         </div>
                         <div id="Estadocivil">
-                                <label for="Estadocivil">Estado Civil</label>
+                                <label for="Estadocivil" class="Estadocivil">Estado Civil</label>
                                 <select name="Estadocivil" id="Estadocivil" required>
                                         <option selected disabled value=""></option>
                                         <option>Solteiro</option>
@@ -57,8 +57,8 @@
                         <br>
                         <div class="Sexo">
                                 <label for="Sexo">Sexo</label required>
-                                <label><input type="radio" name="Sexo" value="Masculino">Masculino</label>
-                                <label><input type="radio" name="Sexo" value="Feminino">Feminino</label>
+                                <label><input type="radio" name="Sexo" value="Masculino" required>Masculino</label>
+                                <label><input type="radio" name="Sexo" value="Feminino" required>Feminino</label>
                         </div>
                 </div>
               <div class="col3">
@@ -69,12 +69,12 @@
                        </div>
                        <div class="alergia">
                                <label for="Alergia" required>Você possui alguma alergia</label>
-                               <input type="radio" name="Alergia" value="sim" onclick="habilitarCampoAlergia()">Sim
-                               <input type="radio" name="Alergia" value="nao" onclick="desabilitarCampoAlergia()">Não
+                               <input type="radio" name="Alergia" value="sim" onclick="habilitarCampoAlergia()" required>Sim
+                               <input type="radio" name="Alergia" value="nao" onclick="desabilitarCampoAlergia()" required>Não
                        </div>
                        <div class="qualalergia">
                          <label for="qualAlergia" required>Qual alergia</label>
-                         <input type="text" id="qualalergia" disabled>
+                         <input type="text" id="qualalergia" disabled required>
                        </div>
               </div>
                 <script>
@@ -91,19 +91,28 @@
                 <div class="col4">
                         <div class="internado" >
                                 <label for="internado" required>Esteve internado nos últimos 30 dias</label>
-                                <label><input type="radio" name="internado" value="Sim">Sim</label>
-                                <label><input type="radio" name="internado" value="Não">Não</label>
+                                <label><input type="radio" name="internado" value="Sim" required>Sim</label>
+                                <label><input type="radio" name="internado" value="Não" required>Não</label>
                         </div>
                         <div class=contato">
                                 <label for="contato" required>Nome e Telefone de Pessoa para contato</label>
-                                <input type="text" name="nomecontato" id="nomecontato"><br>
-                                <br> <input type="tel" name="telefonecontato" id="telefonecontato" placeholder="(99) 9999-9999"  maxlength="15">
+                                <input type="text" name="nomecontato" id="nomecontato" required><br>
+                                <br> <input type="tel" name="telefonecontato" id="telefonecontato" placeholder="(99) 9999-9999"  maxlength="15" required>
                         </div>
                 </div>
                 <div class="button">
                               <input type="submit" class="botao_formulario" value="Processar QR Code" required>
                         </div>
+                <script>
+                        window.onload = function() {
+                           var container = document.querySelector('.formulario');
+                        container.style.opacity = '1';
+                        container.style.transform = 'translateY(0)';
+};
+
+                </script>
                 </form>
+
         </div>
 
 </body>
