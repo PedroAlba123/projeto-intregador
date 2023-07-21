@@ -87,10 +87,6 @@ fieldset {
     display: block; 
     margin-bottom: 10px; 
   }
-  
-  input,textarea {
-    margin-bottom: 20px;
-  }
 
   .botao_formulario{
     
@@ -141,6 +137,7 @@ fieldset {
     border-radius: 15px;
     height: 30px;
     text-align: center;
+    width: 150px;
   }
   #Estadocivil{
     border-radius: 15px;
@@ -164,6 +161,9 @@ fieldset {
     border-radius: 15px;
     height: 30px;
     text-align: center;
+  }
+  .nomecontato{
+    margin-top: -35px;
   }
   #telefonecontato{
     border-radius: 15px;

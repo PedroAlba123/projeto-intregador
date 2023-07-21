@@ -69,8 +69,8 @@
                        </div>
                        <div class="alergia">
                                <label for="Alergia" required>Você possui alguma alergia</label>
-                               <input type="radio" name="Alergia" value="sim" onclick="habilitarCampoAlergia()" required>Sim
-                               <input type="radio" name="Alergia" value="nao" onclick="desabilitarCampoAlergia()" required>Não
+                               <label for="alergia"><input type="radio" name="Alergia" value="sim" onclick="habilitarCampoAlergia()" required>Sim</label>
+                               <label for="alergia"><input type="radio" name="Alergia" value="nao" onclick="desabilitarCampoAlergia()" required>Não</label>
                        </div>
                        <div class="qualalergia">
                          <label for="qualAlergia" required>Qual alergia</label>
@@ -94,10 +94,13 @@
                                 <label><input type="radio" name="internado" value="Sim" required>Sim</label>
                                 <label><input type="radio" name="internado" value="Não" required>Não</label>
                         </div>
-                        <div class=contato">
-                                <label for="contato" required>Nome e Telefone de Pessoa para contato</label>
-                                <input type="text" name="nomecontato" id="nomecontato" required><br>
-                                <br> <input type="tel" name="telefonecontato" id="telefonecontato" placeholder="(99) 9999-9999"  maxlength="15" required>
+                        <div class="nomecontato">
+                                <label for="nomecontato" required>Nome de Pessoa para contato</label>
+                                <input type="text" name="nomecontato" id="nomecontato" required>
+                        </div>
+                        <div class="telcontato">
+                                <label for="telcontato">Telefone de Pessoa para contato</label>
+                                <input type="tel" name="telefonecontato" id="telefonecontato" placeholder="(99) 9999-9999"  maxlength="15" required>
                         </div>
                 </div>
                 <div class="button">
