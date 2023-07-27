@@ -20,7 +20,7 @@
 
 .cabecario{
     width: 100%;
-    height: 100px;
+    height: 80px;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -67,15 +67,15 @@ fieldset {
 
   .formulario{
     border: 1px solid black;
-    width: 60%;
-    height: 600px;
+    width: 65%;
+    height: 550px;
     background-color: #cde3bb;
     padding: 20px;
     display: flex;   
     list-style: none;
     flex-direction: column;
     margin: auto;
-    margin-top: 30px;
+    margin-top: 20px;
     transform: translateY(-700px);
     transition: opacity 1s, transform 1s;
     border-radius: 15px;
@@ -102,7 +102,7 @@ fieldset {
     -webkit-border-radius: 4px ;
     border-radius: 4px;
     transition: 0,3s;
-    margin-top: -15px;
+    margin-top: -30px;
 
   }
 
@@ -113,16 +113,12 @@ fieldset {
     display: flex;
     align-items:center ;
     justify-content: center;
-  }
-
-
-  
+  }  
   #telefone{
     border-radius: 15px;
     height: 30px;
     text-align: center;
   }
-
   #Nome{
     border-radius: 15px;
     height: 30px;
@@ -145,7 +141,7 @@ fieldset {
     width: 200px;
   }
   .Estadocivil{
-    margin-top: 22px;
+    margin-top: -15px;
   }
   #CPF{
     border-radius: 15px;
@@ -162,16 +158,16 @@ fieldset {
     height: 30px;
     text-align: center;
   }
-  .nomecontato{
-    margin-top: -35px;
-  }
   #telefonecontato{
     border-radius: 15px;
     height: 30px;
     text-align: center;
     
   }
-
+  .internado{
+    margin-top: 20px;
+    margin-right: 30px;
+  }  
   .info{
    height: 20px;
    width: 99%;
@@ -182,48 +178,40 @@ fieldset {
   .titulo{
     height: 30px;
   }
+  .Sexo{
+    margin-left: 0px;
+  }
 
-
-  .col1{
-    height: 350px;
-    width: 23%;
+  .linha1{
+    height: 100px;
+    width: 100%;
     
     display: flex;
     justify-content: space-between;
     text-align: center;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    margin-top: -20px;
   }
 
-  .col2{
-    height: 350px;
-    width: 23%;
+  .linha2{
+    height: 100px;
+    width: 100%;
 
     display: flex;
     justify-content: space-between;
     text-align: center;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
   }
 
-  .col3{
-    height: 350px;
-    width: 23%;
+  .linha3{
+    height: 100px;
+    width: 100%;
 
     display: flex;
     justify-content: space-between;
     text-align: center;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .col4{
-    width: 23%;
-    height: 350px;
-
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
   }
