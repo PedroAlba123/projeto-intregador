@@ -41,6 +41,8 @@ float: left;
   font-size: 24px;
   text-align: center;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue",  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", Arial, sans-serif,;
+  align-items: center;
+  margin-top: -15px;
 }
 h2{
   font-size: 15px;
