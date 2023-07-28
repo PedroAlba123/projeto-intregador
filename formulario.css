@@ -182,7 +182,6 @@ fieldset {
     margin-top: 22px;
 
   }
-
   .linha1{
     height: 100px;
     width: 100%;
@@ -194,7 +193,6 @@ fieldset {
     align-items: center;
     margin-top: -20px;
   }
-
   .linha2{
     height: 100px;
     width: 100%;
@@ -206,7 +204,6 @@ fieldset {
     flex-direction: row;
     align-items: center;
   }
-
   .linha3{
     height: 100px;
     width: 100%;
