@@ -5,22 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
-    <link rel="icon" type="image/x-icon" href="img/favicon_io (2)/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
 </head>
 <body>
-
         <div class="formulario">
                 <header class="cabecario">
                         <img src="img/logo.png" alt="" class="img">
-                        <h1 class="titulo">
-                         Pré Cadastro
-                        </h1>
                 </header>
-
-                <div class="info">
-                        <p>Complete com Suas informações</p>
-                </div>
-
+                <br>
             <form action="formulario.html">                
                         <div class="linha1">
                                 <div class="Nome">
@@ -31,8 +23,7 @@
                                 <div class="nascimento">
                                         <label for="Data de Nascimento">Data de Nascimento</label>
                                         <input type="date" name="Nascimento" id="Nascimento" placeholder="Nascimento" required>
-                                </div>
-                                
+                                </div> 
                                 <div class="CPF">
                                         <label for="CPF">CPF</label>
                                         <input type="text" name="CPF" id="CPF"  maxlength="14" required>
@@ -99,19 +90,16 @@
                                 </div>
                         </div>
                 <div class="button">
-                              <input type="submit" class="botao_formulario" value="Salvar " required>
-                        </div>
+                              <input type="submit" class="botao_formulario" value="Salvar" required>
+                </div>
                 <script>
                         window.onload = function() {
                            var container = document.querySelector('.formulario');
                         container.style.opacity = '1';
                         container.style.transform = 'translateY(0)';
-};
-
+                        };
                 </script>
                 </form>
-
         </div>
-
 </body>
 </html>

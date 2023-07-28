@@ -33,7 +33,7 @@ header{
   justify-content: space-evenly;
   gap: 40px;
   font-weight: bold;
-  border: solid 1PX black;
+  
   border-radius: 15px;
 }
 
@@ -199,7 +199,7 @@ fieldset {
     height: 100px;
     width: 100%;
   
-    
+
     display: flex;
     justify-content: space-between;
     text-align: center;
