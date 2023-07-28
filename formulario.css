@@ -180,7 +180,6 @@ fieldset {
   }
   .Sexo{
     margin-top: 22px;
-
   }
   .linha1{
     height: 100px;
@@ -196,7 +195,6 @@ fieldset {
   .linha2{
     height: 100px;
     width: 100%;
-  
 
     display: flex;
     justify-content: space-between;
