@@ -246,7 +246,7 @@ fieldset {
     }
     .cabecario{
       margin-top: 20px;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
     }
     .img{
       width:  45%;
@@ -273,59 +273,77 @@ fieldset {
     div{
       #Nome{
         width: 98%;
+        height: 100%;
         float:left;     
-        margin-bottom: 30px;
+        margin-bottom: 40px;
       }
       .Sexo{
-        margin-bottom: 30px;
-
+        margin-bottom: 40px;
       }
       #Nascimento{
         width: 98%;
+        height: 100%;
+
         float:left;
-        margin-bottom: 30px;
+        margin-bottom: 40px;
       }
       #CPF{
         width: 98%;
+        height: 100%;
+
         float:left;
-        margin-bottom: 30px;
+        margin-bottom: 40px;
       }
       #Endereco{
         width: 98%;
+        height: 100%;
+
         float:left;
-        margin-bottom: 30px;
+        margin-bottom: 40px;
       }
       #Estadocivil{
         width: 100%;
+        height: 100%;
+
         float:left;
-        margin-bottom: 30px;
+        margin-bottom: 40px;
         height: 17px;       
       }
       #telefone{
         width: 98%;
+        height: 100%;
+
         float:left;
-        margin-bottom: 30px;
+        margin-bottom: 40px;
       }
       #qualalergia{
         width: 98%;
+        height: 100%;
+
         float:left;
-        margin-bottom: 30px;
+        margin-bottom: 40px;
       }
       #nomecontato{
         width: 98%;
+        height: 100%;
+
         float:left;
-        margin-bottom: 30px;
+        margin-bottom: 40px;
       }
       #telefonecontato{
         width: 98%;
+        height: 100%;
+
         float:left;
-        margin-bottom: 30px;
+        margin-bottom: 40px;
       }
       .alergia{
-        margin-bottom: 30px;
+        margin-bottom: 40px;
+        height: 100%;
+
       }
       .internado{
-        margin-bottom: 20px;
+        margin-bottom: 40px;
       }
     }
   }

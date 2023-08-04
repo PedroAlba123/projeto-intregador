@@ -83,7 +83,7 @@ h1 {
 
 .botao{
   
-  width:100%;
+  width: 100%;
   display: block;
   float:left;
   background-color: #038C4C;
@@ -201,4 +201,9 @@ h1 {
   -moz-animation-duration:2s;
   animation-duration:2s;
 
+}
+@media (max-width: 250px){
+  .botao{
+    width: 30px;
+  }
 }
